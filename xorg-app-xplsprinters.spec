@@ -1,18 +1,18 @@
 Summary:	xplsprinters application
 Summary(pl):	Aplikacja xplsprinters
 Name:		xorg-app-xplsprinters
-Version:	0.99.1
+Version:	1.0.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/xplsprinters-%{version}.tar.bz2
-# Source0-md5:	33e51a7bb9b88d3e28ce43e7699c1392
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xplsprinters-%{version}.tar.bz2
+# Source0-md5:	c1558277f4a010473ff0744845c49537
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXprintUtil-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,14 +37,13 @@ Aplikacja xplsprinters.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	appmandir=%{_mandir}/man1
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*.1x*
