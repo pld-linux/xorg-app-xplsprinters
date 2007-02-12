@@ -1,5 +1,5 @@
 Summary:	xplsprinters application
-Summary(pl.UTF-8):   Aplikacja xplsprinters
+Summary(pl.UTF-8):	Aplikacja xplsprinters
 Name:		xorg-app-xplsprinters
 Version:	1.0.1
 Release:	1
