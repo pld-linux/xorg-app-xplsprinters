@@ -1,5 +1,5 @@
 Summary:	xplsprinters application
-Summary(pl):	Aplikacja xplsprinters
+Summary(pl.UTF-8):   Aplikacja xplsprinters
 Name:		xorg-app-xplsprinters
 Version:	1.0.1
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xplsprinters application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xplsprinters.
 
 %prep
